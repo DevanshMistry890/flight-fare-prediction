@@ -1,0 +1,43 @@
+2022-08-02 22:31:51,653:DEBUG: Pre.py File execution started 
+2022-08-02 22:31:51,685:DEBUG: Database Loaded 
+2022-08-02 22:31:51,763:DEBUG:Database Pre-processing is Finished
+2022-08-02 22:31:51,795:DEBUG:db for modeling is created.
+2022-08-03 21:21:07,642:DEBUG: Pre.py File execution started 
+2022-08-03 21:21:07,674:DEBUG: Database Loaded 
+2022-08-03 21:21:07,814:DEBUG:{
+'Airline': {'Air Asia': 0, 'Air India': 1, 'GoAir': 2, 'IndiGo': 3, 'Jet Airways': 4, 'Jet Airways Business': 5, 'Multiple carriers': 6, 'Multiple carriers Premium economy': 7, 'SpiceJet': 8, 'Trujet': 9, 'Vistara': 10, 'Vistara Premium economy': 11}, 
+'Source': {'Banglore': 0, 'Chennai': 1, 'Delhi': 2, 'Kolkata': 3, 'Mumbai': 4}, 
+'Destination': {'Banglore': 0, 'Cochin': 1, 'Delhi': 2, 'Hyderabad': 3, 'Kolkata': 4, 'New Delhi': 5}, 
+'Additional_Info': {'1 Long layover': 0, '1 Short layover': 1, '2 Long layover': 2, 'Business class': 3, 'Change airports': 4, 'In-flight meal not included': 5, 'No Info': 6, 'No check-in baggage included': 7, 'No info': 8, 'Red-eye flight': 9}}
+2022-08-03 21:21:07,814:DEBUG:Database Pre-processing is Finished
+2022-08-03 21:21:07,871:DEBUG:db for modeling is created.
+2022-09-19 08:49:41,900:DEBUG: Model.py File execution started 
+2022-09-19 08:49:41,915:DEBUG: Database Loaded 
+2022-09-19 08:49:51,901:DEBUG: Model.py File execution started 
+2022-09-19 08:49:51,917:DEBUG: Database Loaded 
+2022-09-19 08:58:40,228:DEBUG: Model.py File execution started 
+2022-09-19 08:58:40,244:DEBUG: Database Loaded 
+2022-09-19 08:58:40,388:DEBUG: Execution of Model.py is finished 
+2022-09-19 14:29:16,387:DEBUG: Pre.py File execution started 
+2022-09-19 14:29:16,450:DEBUG: Database Loaded 
+2022-09-19 14:29:16,574:DEBUG:{'Airline': {'Air Asia': 0, 'Air India': 1, 'GoAir': 2, 'IndiGo': 3, 'Jet Airways': 4, 'Jet Airways Business': 5, 'Multiple carriers': 6, 'Multiple carriers Premium economy': 7, 'SpiceJet': 8, 'Trujet': 9, 'Vistara': 10, 'Vistara Premium economy': 11}, 'Source': {'Banglore': 0, 'Chennai': 1, 'Delhi': 2, 'Kolkata': 3, 'Mumbai': 4}, 'Destination': {'Banglore': 0, 'Cochin': 1, 'Delhi': 2, 'Hyderabad': 3, 'Kolkata': 4, 'New Delhi': 5}, 'Additional_Info': {'1 Long layover': 0, '1 Short layover': 1, '2 Long layover': 2, 'Business class': 3, 'Change airports': 4, 'In-flight meal not included': 5, 'No Info': 6, 'No check-in baggage included': 7, 'No info': 8, 'Red-eye flight': 9}}
+2022-09-19 14:29:16,576:DEBUG:Database Pre-processing is Finished
+2022-09-19 14:29:16,619:DEBUG:db for modeling is created.
+2022-09-19 14:32:30,135:DEBUG: Pre.py File execution started 
+2022-09-19 14:32:30,155:DEBUG: Database Loaded 
+2022-09-19 14:48:44,514:DEBUG: Pre.py File execution started 
+2022-09-19 14:48:44,549:DEBUG: Database Loaded 
+2022-09-19 14:48:44,671:DEBUG:{'Airline': {'Air Asia': 0, 'Air India': 1, 'GoAir': 2, 'IndiGo': 3, 'Jet Airways': 4, 'Jet Airways Business': 5, 'Multiple carriers': 6, 'Multiple carriers Premium economy': 7, 'No info': 8, 'SpiceJet': 9, 'Trujet': 10, 'Vistara': 11, 'Vistara Premium economy': 12}, 'Source': {'Banglore': 0, 'Chennai': 1, 'Delhi': 2, 'Kolkata': 3, 'Mumbai': 4, 'No info': 5}, 'Destination': {'Banglore': 0, 'Cochin': 1, 'Delhi': 2, 'Hyderabad': 3, 'Kolkata': 4, 'New Delhi': 5, 'No info': 6}, 'Additional_Info': {'1 Long layover': 0, '1 Short layover': 1, '2 Long layover': 2, 'Business class': 3, 'Change airports': 4, 'In-flight meal not included': 5, 'No check-in baggage included': 6, 'No info': 7, 'Red-eye flight': 8}}
+2022-09-19 14:48:44,671:DEBUG:Database Pre-processing is Finished
+2022-09-19 14:48:44,734:DEBUG:db for modeling is created.
+2022-09-19 14:52:25,288:DEBUG: Model.py File execution started 
+2022-09-19 14:52:25,304:DEBUG: Database Loaded 
+2022-09-19 14:53:06,937:DEBUG: Model.py File execution started 
+2022-09-19 14:53:06,953:DEBUG: Database Loaded 
+2022-09-19 14:53:27,363:DEBUG: Model.py File execution started 
+2022-09-19 14:53:27,394:DEBUG: Database Loaded 
+2022-09-19 14:53:55,769:DEBUG: Model.py File execution started 
+2022-09-19 14:53:55,785:DEBUG: Database Loaded 
+2022-09-19 20:59:20,192:DEBUG: Model.py File execution started 
+2022-09-19 20:59:20,208:DEBUG: Database Loaded 
+2022-09-19 20:59:20,358:DEBUG: Execution of Model.py is finished 

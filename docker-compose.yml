@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  mlcampus:
+    container_name: ffprediction
+    image: devansh890/ffprediction
+    ports:
+      - "5000:5000"
+    build:
+      context: .
+      dockerfile: Dockerfile
