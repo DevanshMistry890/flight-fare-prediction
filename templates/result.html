@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flight Fare Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Flight Fare Prediction">
+<meta name="author" content="Devansh">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/neumorphism.css') }}">
+<link rel="javascript" href="{{ url_for('static', filename='js/neumorphism.js') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head> 
+<body>
+    <main>        
+        <section class="container-fluid py-3">
+            <div class="row justify-content-md-around">
+				<div class="col-12 col-lg-6">
+                <div class="card bg-primary shadow-inset border-light p-3">
+                    <!-- Content -->
+                    <div class="card-body shadow-soft border border-light rounded p-4">
+					<center>
+                        <h4 class="mb-3">Fare Will be </h4>
+                        <span class="price display-2 mb-0" style="color: blue;font-weight: bold;">{{ prediction_text }} $</span>
+						<br>
+                        <a href="{{url_for('Home')}}">
+                        <button type="button" class="btn btn-primary btn-block rounded-bottom">Return</button>
+                        </a>
+						</center>
+                    </div>
+                    <!-- End Content -->
+                </div>
+				</div>
+			</div>
+		</section>
+        <br><br><br>
+        <section class="container-fluid py-3">
+            <div class="row justify-content-md-around">
+            <div class="col-12 col-lg-6">
+                <div class="card-body text-center text-md-left">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-4">
+                                Project by
+                            </p>
+                            <h2 class="mb-3">Devansh Mistry</h2>
+                            <p class="mb-4">
+                                Data Scientist Intern
+                            </p>
+                            <a href="https://github.com/devanshmistry890" class="btn btn-primary">
+                                <span class="mr-1">
+                                    <span class="fas fa-file-invoice"></span>
+                                </span>
+                                Connect
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                            <img src="{{ url_for('static', filename='logo.svg') }}" alt="Devansh-Mistry">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        </section>
+	</main>
+</body>
+</html>

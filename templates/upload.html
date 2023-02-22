@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flight Fare Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Flight Fare Prediction">
+<meta name="author" content="Devansh">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/neumorphism.css') }}">
+<link rel="javascript" href="{{ url_for('static', filename='js/neumorphism.js') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head> 
+<body>
+    <main>
+		<section class="section-header px-4 py-4 bg-primary overflow-hidden text-center border-bottom border-light">
+            <h1>Flight Fare Prediction </h1>
+            <p class="lead">Choose way to interact with prediction Model</p> 
+        </section>
+        <section class="container-fluid py-2">
+            <div class="row justify-content-md-around">
+			    <div class="col-md-10 col-lg-8">
+					<div class="card shadow-inset bg-primary border-light p-4 rounded">						
+						<div class="card bg-primary shadow-soft border-light mb-4">
+							<div class="card-body px-5 py-5 text-center text-md-left">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<h2 class="mb-3">Individual/Single</h2>
+											<p class="mb-0">
+												Individual means You will add required data into given <b>FORM</b> and You will get single prediction.
+											</p>
+										</div>
+									<div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+										<a href="{{url_for('ind')}}" class="btn btn-primary" style="color: blue">
+											Individual Prediction
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>				
+					    <div class="card bg-primary shadow-soft border-light">
+							<div class="card-body px-5 py-5 text-center text-md-left">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<h2 class="mb-3">Batch</h2>
+											<p class="mb-0">
+												Batch means You will upload required data as <b>CSV</b> and You will get predictions into your csv file with multiple prediction.
+												<a href="https://drive.google.com/file/d/1plL8zij79j-am4NZnasZGek1esqBnx3l/view?usp=sharing" target="_blank" style="color: blue" >Sample CSV</a>
+											</p>
+									</div>
+									<div class="col-12 col-md-6 mt-4 mt-md-0 text-md-left">
+									<form name="frmbatch" action="{{ url_for('predict_file')}}" method="POST" enctype="multipart/form-data">
+										<label style="color: blue">Upload CSV for Prediction</label>
+										<br><br>
+										<div class="custom-file">
+										<input type="file" class="custom-file-input" id="customFile" aria-label="File upload" name="file">
+										<label class="custom-file-label" for="customFile">Choose file</label>
+										<br><br>
+										<button type="submit" class="btn btn-block btn-primary">Predict</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+		<section class="container-fluid py-3 border border-light">
+            <div class="row justify-content-md-around">
+            <div class="col-12 col-lg-6">
+                <div class="card-body text-center text-md-left">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-4">
+                                Project by
+                            </p>
+                            <h2 class="mb-3">Devansh Mistry</h2>
+                            <p class="mb-4">
+                                Data Scientist Intern
+                            </p>
+                            <a href="https://github.com/devanshmistry890" class="btn btn-primary">
+                                <span class="mr-1">
+                                    <span class="fas fa-file-invoice"></span>
+                                </span>
+                                Connect
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                            <img src="{{ url_for('static', filename='logo.svg') }}" alt="Devansh-Mistry">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        </section>
+</main>
+</body>
+</html>

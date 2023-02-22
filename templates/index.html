@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flight Fare Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Flight Fare Prediction">
+<meta name="author" content="Devansh">
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/@fortawesome/fontawesome-free/css/all.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/neumorphism.css') }}">
+<script src="{{ url_for('static', filename='js/neumorphism.js') }}"></script>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<script src="{{ url_for('static', filename='vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+</head> 
+<body>
+    <main>
+        <section class="container-fluid py-3">
+            <div class="row justify-content-md-around">
+                <div class="col-5">
+                    <div class="card bg-primary shadow-soft border-light px-4 py-4">
+                        <div class="card-header pb-0 text-center ">
+                            <h2 class="h1 mb-3">Flight Fare Prediction</h2>
+                            <p class="mb-5 lead">
+                                Enter Details for forecast Flight Fare.
+                            </p>
+                        </div>
+                        <form name="frmregi" action="/result" method="POST">
+                            <!-- Form -->
+                            <div class="row mb-lg-6">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="my-1 mr-2" for="Source">Flying From</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="Source" name="Source" required>
+                                            <option value="0" selected>Banglore</option>
+											<option value="1">Chennai</option>
+											<option value="2">Delhi</option>
+                                            <option value="3">Kolkata</option>
+                                            <option value="4">Mumbai</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="h6" for="D_DT">Departure Date & Time</label>
+                                        <div class="input-group mb-4">
+                                            <input type="datetime-local" name="D_DT" id="D_DT" placeholder="Select date" required="required" aria-label="D_DT">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="my-1 mr-2" for="Airline">Airline</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="Airline" name="Airline" required>
+                                            <option value="0" selected>Air Asia</option>
+											<option value="1">Air India</option>
+											<option value="2">GoAir</option>
+                                            <option value="3">IndiGo</option>
+                                            <option value="4">Jet Airways</option>
+                                            <option value="5">Jet Airways Business</option>
+                                            <option value="6">Multiple carriers</option>
+                                            <option value="7">Multiple carriers Premium economy</option>
+                                            <option value="8">SpiceJet</option>
+                                            <option value="9">Trujet</option>
+                                            <option value="10">Vistara</option>
+                                            <option value="11">Vistara Premium economy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="my-1 mr-2" for="Destination">Flying To</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="Destination" name="Destination" required>
+                                            <option value="0" selected>Banglore</option>
+											<option value="1">Cochin</option>
+											<option value="2">Delhi</option>
+                                            <option value="3">Hyderabad</option>
+                                            <option value="4">Kolkata</option>
+                                            <option value="5">New Delhi</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="h6" for="A_DT">Arrival Date & Time</label>
+                                        <div class="input-group mb-4">
+										    <input type="datetime-local" name="A_DT" id="A_DT" placeholder="Select date" required="required" aria-label="D_DT">
+                                        </div>
+                                    </div>                                    
+                                    <div class="form-group">
+                                        <label class="my-1 mr-2" for="Stop_No">Stop Num</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="Stop_No" name="Stop_No" required>
+                                            <option value="0" selected>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>                                                              
+                                </div>
+                                <div class="col-lg-12">  
+                                    <div class="form-group">
+                                        <label class="my-1 mr-2" for="Additional_Info">Addition requirement</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="Additional_Info" name="Additional_Info" required>
+                                            <option value="0" selected>1 Long layover</option>
+											<option value="1">1 Short layover</option>
+											<option value="2">2 Long layover</option>
+                                            <option value="3">Business class</option>
+                                            <option value="4">Change airports</option>
+                                            <option value="5">In-flight meal not included</option>
+                                            <option value="6">No Addition requirement</option>
+                                            <option value="7">No check-in baggage included</option>
+                                            <option value="9">Red-eye flight</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>                        
+                            <button type="submit" class="btn btn-block btn-primary">Predict</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+</body>
+</html>
