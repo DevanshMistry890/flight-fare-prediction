@@ -30,9 +30,10 @@ The Flight Fare Prediction MH Open Source Dataset has been used for this purpose
 - [dataset](https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh)
 
 
-## Homepage (Responsive)
+## Homepage, Form, Result (Responsive)
 <img src = "image\Home.png" width = "700px">
-<img src = "image\Predict.png" width = "700px">
+<img src = "image\Ind.jpg" width = "700px">
+<img src = "image\Predict.jpg" width = "700px">
 
 <br><br>
 
